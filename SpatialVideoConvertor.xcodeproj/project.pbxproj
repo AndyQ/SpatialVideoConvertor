@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1D78C1B2B46CDE2001CE63B /* SpatialVideoConvertorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D78C1A2B46CDE2001CE63B /* SpatialVideoConvertorApp.swift */; };
+		A1D78C1D2B46CDE2001CE63B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D78C1C2B46CDE2001CE63B /* ContentView.swift */; };
+		A1D78C1F2B46CDE3001CE63B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D78C1E2B46CDE3001CE63B /* Assets.xcassets */; };
+		A1D78C222B46CDE3001CE63B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D78C212B46CDE3001CE63B /* Preview Assets.xcassets */; };
+		A1D78C5A2B481312001CE63B /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D78C582B481311001CE63B /* VideoWriter.swift */; };
+		A1D78C642B4822C9001CE63B /* ImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D78C5E2B481C64001CE63B /* ImageExt.swift */; };
+		A1D78C692B484B28001CE63B /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D78C682B484B28001CE63B /* ErrorHandling.swift */; };
+		A1D78C6B2B4855CB001CE63B /* VideoConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D78C622B482215001CE63B /* VideoConvertor.swift */; };
+		A1D78C7D2B485E4B001CE63B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1D78C7C2B485E4B001CE63B /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1D78C172B46CDE2001CE63B /* SpatialVideoConvertor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpatialVideoConvertor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D78C1A2B46CDE2001CE63B /* SpatialVideoConvertorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialVideoConvertorApp.swift; sourceTree = "<group>"; };
+		A1D78C1C2B46CDE2001CE63B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1D78C1E2B46CDE3001CE63B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1D78C212B46CDE3001CE63B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1D78C2A2B46D361001CE63B /* SpatialVideoConvertor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpatialVideoConvertor.entitlements; sourceTree = "<group>"; };
+		A1D78C2B2B46D73C001CE63B /* file_example_MP4_480_1_5MG.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = file_example_MP4_480_1_5MG.mp4; path = ../../../../../../Downloads/file_example_MP4_480_1_5MG.mp4; sourceTree = "<group>"; };
+		A1D78C582B481311001CE63B /* VideoWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoWriter.swift; sourceTree = "<group>"; };
+		A1D78C5E2B481C64001CE63B /* ImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExt.swift; sourceTree = "<group>"; };
+		A1D78C622B482215001CE63B /* VideoConvertor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoConvertor.swift; sourceTree = "<group>"; };
+		A1D78C682B484B28001CE63B /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		A1D78C7C2B485E4B001CE63B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1D78C142B46CDE2001CE63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1D78C0E2B46CDE2001CE63B = {
+			isa = PBXGroup;
+			children = (
+				A1D78C7C2B485E4B001CE63B /* README.md */,
+				A1D78C192B46CDE2001CE63B /* SpatialVideoConvertor */,
+				A1D78C182B46CDE2001CE63B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1D78C182B46CDE2001CE63B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1D78C172B46CDE2001CE63B /* SpatialVideoConvertor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1D78C192B46CDE2001CE63B /* SpatialVideoConvertor */ = {
+			isa = PBXGroup;
+			children = (
+				A1D78C682B484B28001CE63B /* ErrorHandling.swift */,
+				A1D78C2A2B46D361001CE63B /* SpatialVideoConvertor.entitlements */,
+				A1D78C1A2B46CDE2001CE63B /* SpatialVideoConvertorApp.swift */,
+				A1D78C1C2B46CDE2001CE63B /* ContentView.swift */,
+				A1D78C5E2B481C64001CE63B /* ImageExt.swift */,
+				A1D78C622B482215001CE63B /* VideoConvertor.swift */,
+				A1D78C582B481311001CE63B /* VideoWriter.swift */,
+				A1D78C1E2B46CDE3001CE63B /* Assets.xcassets */,
+				A1D78C202B46CDE3001CE63B /* Preview Content */,
+			);
+			path = SpatialVideoConvertor;
+			sourceTree = "<group>";
+		};
+		A1D78C202B46CDE3001CE63B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A1D78C2B2B46D73C001CE63B /* file_example_MP4_480_1_5MG.mp4 */,
+				A1D78C212B46CDE3001CE63B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1D78C162B46CDE2001CE63B /* SpatialVideoConvertor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1D78C252B46CDE3001CE63B /* Build configuration list for PBXNativeTarget "SpatialVideoConvertor" */;
+			buildPhases = (
+				A1D78C132B46CDE2001CE63B /* Sources */,
+				A1D78C142B46CDE2001CE63B /* Frameworks */,
+				A1D78C152B46CDE2001CE63B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpatialVideoConvertor;
+			productName = SpacialVideoConvertor;
+			productReference = A1D78C172B46CDE2001CE63B /* SpatialVideoConvertor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1D78C0F2B46CDE2001CE63B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					A1D78C162B46CDE2001CE63B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = A1D78C122B46CDE2001CE63B /* Build configuration list for PBXProject "SpatialVideoConvertor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1D78C0E2B46CDE2001CE63B;
+			productRefGroup = A1D78C182B46CDE2001CE63B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1D78C162B46CDE2001CE63B /* SpatialVideoConvertor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1D78C152B46CDE2001CE63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D78C7D2B485E4B001CE63B /* README.md in Resources */,
+				A1D78C222B46CDE3001CE63B /* Preview Assets.xcassets in Resources */,
+				A1D78C1F2B46CDE3001CE63B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1D78C132B46CDE2001CE63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D78C1D2B46CDE2001CE63B /* ContentView.swift in Sources */,
+				A1D78C642B4822C9001CE63B /* ImageExt.swift in Sources */,
+				A1D78C692B484B28001CE63B /* ErrorHandling.swift in Sources */,
+				A1D78C5A2B481312001CE63B /* VideoWriter.swift in Sources */,
+				A1D78C6B2B4855CB001CE63B /* VideoConvertor.swift in Sources */,
+				A1D78C1B2B46CDE2001CE63B /* SpatialVideoConvertorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1D78C232B46CDE3001CE63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1D78C242B46CDE3001CE63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1D78C262B46CDE3001CE63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = SpatialVideoConvertor/SpatialVideoConvertor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpatialVideoConvertor/Preview Content\"";
+				DEVELOPMENT_TEAM = A4ZM73UFF5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Spatial Video Convertor";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyqua.SpatialVideoConvertor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1D78C272B46CDE3001CE63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = SpatialVideoConvertor/SpatialVideoConvertor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpatialVideoConvertor/Preview Content\"";
+				DEVELOPMENT_TEAM = A4ZM73UFF5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Spatial Video Convertor";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyqua.SpatialVideoConvertor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1D78C122B46CDE2001CE63B /* Build configuration list for PBXProject "SpatialVideoConvertor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D78C232B46CDE3001CE63B /* Debug */,
+				A1D78C242B46CDE3001CE63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1D78C252B46CDE3001CE63B /* Build configuration list for PBXNativeTarget "SpatialVideoConvertor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D78C262B46CDE3001CE63B /* Debug */,
+				A1D78C272B46CDE3001CE63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1D78C0F2B46CDE2001CE63B /* Project object */;
+}

@@ -8,6 +8,11 @@
 import SwiftUI
 import PhotosUI
 import AVKit
+#if (iOS)
+import UIKit
+#elseif (macOS)
+import Cocoa
+#endif
 
 struct Movie: Transferable {
     let url: URL
@@ -45,6 +50,7 @@ struct ContentView: View {
     @State private var selectedItem: PhotosPickerItem?
     @State private var loadState = LoadState.unknown
     @State private var  url: URL?
+    @State private var  convertedUrl: URL?
     @State private var progress: Float = 0
 
     @State private var error: DisplayError? = nil
@@ -52,21 +58,39 @@ struct ContentView: View {
     var body: some View {
         VStack {
             PhotosPicker("Select movie", selection: $selectedItem, matching: .videos)
-            switch loadState {
-                case .unknown:
-                    EmptyView()
-                case .loading:
-                    ProgressView()
-                case .loaded(let movie):
-                    VideoPlayer(player: AVPlayer(url: movie.url))
-                case .failed:
-                    Text("Import failed")
+            
+            if convertedUrl == nil {
+                switch loadState {
+                    case .unknown:
+                        EmptyView()
+                    case .loading:
+                        ProgressView()
+                    case .loaded(let movie):
+                        VideoPlayer(player: AVPlayer(url: movie.url))
+                    case .failed:
+                        Text("Import failed")
+                }
+            } else {
+                VideoPlayer(player: AVPlayer(url: convertedUrl!))
             }
             
-            Button( "Convert" ) {
-                progress = 0
-                convertVideo()
+            HStack {
+                Button( "Convert" ) {
+                    progress = 0
+                    convertVideo()
+                }
+                .padding(.trailing)
+                
+                if let convertedUrl {
+                    Button( "Save video" ) {
+                        save( url: convertedUrl )
+                    }
+                    .padding(.trailing)
+                }
+                
+                Spacer()
             }
+            .padding()
             
             Progress(progress:$progress)
         }
@@ -76,7 +100,7 @@ struct ContentView: View {
                 do {
                     loadState = .loading
                     progress = 0
-
+                    convertedUrl = nil
                     if let movie = try await selectedItem?.loadTransferable(type: Movie.self) {
                         url = movie.url
 
@@ -95,6 +119,25 @@ struct ContentView: View {
 }
 
 extension ContentView {
+    func save( url: URL ) {
+#if os(iOS)
+        let picker = UIDocumentPickerViewController(forExporting: [url], asCopy:true )
+        if let window = UIApplication.shared.connectedScenes.map({ $0 as? UIWindowScene }).compactMap({ $0 }).first?.windows.first {
+            
+            window.rootViewController?.present(picker, animated: true)
+        }
+#elseif os(macOS)
+        let panel = NSSavePanel()
+        panel.nameFieldLabel = "Save converted video as:"
+        panel.nameFieldStringValue = "output.mp4"
+        panel.canCreateDirectories = true
+        let response = panel.runModal()
+        if response == .OK {
+            try? FileManager.default.copyItem(at: url, to: panel.url!)
+        }
+#endif
+    }
+
     func convertVideo() {
         guard let url else { return }
         let inputFile = url
@@ -123,9 +166,7 @@ extension ContentView {
             }
             print( "Finished")
             
-            let movie = Movie(url: outputFile)
-            loadState = .loaded(movie)
-
+            convertedUrl = outputFile
         }
     }
 }

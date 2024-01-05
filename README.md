@@ -2,7 +2,7 @@
 
 Converts a Spatial Video (recorded from iOS) to a side-by-side stereo video
 
-Credits
+## Credits
 
 Video Writing code is based on  
 https://gist.github.com/xaphod/de83379cc982108a5b38115957a247f9
